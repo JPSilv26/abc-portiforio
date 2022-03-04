@@ -29,7 +29,6 @@
 header {
     background-color: var(--fundoCor1);
 }
-
 .titulo {
     display: block;
     padding: 25px 45px;
@@ -68,8 +67,8 @@ main .div01 {
     height: 90vh;
     background-image: url("../imagens/redShape1.png");
     background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 73%;
+    background-position-y: center ;
+    background-position-x: 72%;
     background-size: 600px;
 }
 
@@ -81,8 +80,8 @@ main .celular {
 }
 
 main .celular img {
-    width: 245px;
-    height: 485px;
+    width: 70%;
+    height: 70%;
 }
 
 main .box {
@@ -90,33 +89,33 @@ main .box {
     background-color: white;
     box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.288);
     border-radius: 20px;
-    padding: 40px 30px;
-    width: 256px;
-    left: -90%;
-    top: 49%;
+    padding: 40px 25px;
+    width: 15vw;
+    left: -60%;
+    top: 44%;
     z-index: 5;
 }
 
-main .textP {
+main .textd1 {
     position: absolute;
-    width: 400px;
+    width: 25%;
     left: 20%;
     top: 25%;
     z-index: 6;
 }
 
-.textP h1 {
+.textd1 h1 {
     font-size: 4em;
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 
-.textP p {
+.textd1 p {
     font-size: 1.4em;
 }
 
 .dowload input {
     background-color: var(--fundoCor1);
-    font-size: 1em;
+    font-size: max(15px,1vw);
     font-weight: bold;
     color: white;
     border: none;
