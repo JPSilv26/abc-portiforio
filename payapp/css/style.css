@@ -2,11 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --fundoCor1: #74cdc3;
     --fundoCor2: #ffffff;
     --fundoCor3: #162535;
-    
+
     --fontCor1: #ffffff;
     --fontCor2: #162535;
     --fontCor3: #b1b6bc;
@@ -14,49 +14,57 @@
     --fontCor5: #c75252;
 
     --font: 'Montserrat', sans-serif;
-    
 }
 
-*{
+* {
     margin: 0px auto;
     padding: 0px;
     font-family: var(--font);
 }
 
-.width{
+.width {
     max-width: 1000px;
 }
-header{
+
+header {
     background-color: var(--fundoCor1);
 }
-.titulo{
+
+.titulo {
     display: block;
     padding: 25px 45px;
 }
-.logo{
+
+.logo {
     display: inline-block;
 }
-.logo img{
+
+.logo img {
     width: 140px;
     height: 25px;
 }
-.menu{
+
+.menu {
     display: inline-block;
     float: right;
-    padding: 4px 0px; /*Centralizar altura do menu*/
+    padding: 4px 0px;
+    /*Centralizar altura do menu*/
 }
-.menu a{
+
+.menu a {
     padding: 10px 25px;
     font-weight: bold;
     text-decoration: none;
     color: var(--fontCor1);
 }
-.menu a:hover{
+
+.menu a:hover {
     background-color: #162535;
     border-radius: 20px;
     color: var(--fontCor1);
 }
-main .div01{
+
+main .div01 {
     height: 90vh;
     background-image: url("../imagens/redShape1.png");
     background-repeat: no-repeat;
@@ -64,17 +72,20 @@ main .div01{
     background-position-x: 73%;
     background-size: 600px;
 }
-main .celular{
+
+main .celular {
     position: absolute;
     left: 64%;
     top: 25%;
     z-index: 4;
 }
-main .celular img{
+
+main .celular img {
     width: 245px;
     height: 485px;
 }
-main .box{
+
+main .box {
     position: absolute;
     background-color: white;
     box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.288);
@@ -85,21 +96,25 @@ main .box{
     top: 49%;
     z-index: 5;
 }
-main .textP{
+
+main .textP {
     position: absolute;
     width: 400px;
     left: 20%;
     top: 25%;
     z-index: 6;
 }
-.textP h1{
+
+.textP h1 {
     font-size: 4em;
     margin: 20px 0px;
 }
-.textP p{
+
+.textP p {
     font-size: 1.4em;
 }
-.dowload input{
+
+.dowload input {
     background-color: var(--fundoCor1);
     font-size: 1em;
     font-weight: bold;
