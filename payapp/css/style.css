@@ -27,39 +27,43 @@
     margin: 0px auto;
     padding: 0px;
     font-family: var(--font);
+    list-style: none;
 }
-
+/*Tamanho maximo para ocupar o conteudo na tela*/
 .width {
     max-width: 1000px;
 }
+
 /*HEADER*//*HEADER*/
-header {
+header{
     background-color: var(--fundoCor1);
 }
-
 .titulo {
-    display: block;
-    padding: 15px 35px 10px 45px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
-.logo {
-    display: inline-block;
-}
-
-.logo img {
+.titulo img {
     width: 120px;
+    margin-top: 4px; /*Centralizar logo*/
 }
 
-.menu {
-    display: inline-block;
-    float: right;
+.titulo .menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0px;
 }
 
 .menu a {
-    padding: 5px 15px;
-    font-weight: bold;
     text-decoration: none;
     color: var(--fontCor1);
+    font-weight: bold;
+    padding: 5px 20px;
+    margin: 0px 1px;
 }
 
 .menu a:hover {
@@ -69,24 +73,22 @@ header {
 
 /*MAIN DIV PRINCIPAL*/
 main .background1{
+    display: block;
     max-width: 1000px;
     background-image: url("../imagens/redShape1.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 60%;
 }
-.div01 {
-    position: relative;
-    display: grid!important;
-    grid-template-columns: 1fr;
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     height: 100vh;
 }
 .textd1 {
-    position: absolute;
-    width: 350px;
-    top: 50%;
-    left: 5%;
-    transform: translate(0,-50%);
+    display: block;
+    max-width: 50%;
 }
 
 .textd1 h1 {
@@ -99,14 +101,12 @@ main .background1{
 }
 
 .celular {
-    position: absolute;
-    top: 55%;
-    right: 5%;
-    transform: translate(0%, -50%);
+    display: flex-box;
+    position: relative;
 }
 
 .celular img {
-    width: 250px;
+    max-width: 80%;
 }
 
 .box {
@@ -117,8 +117,8 @@ main .background1{
     padding: 40px 25px;
     width: 200px;
     transform: translate(0,-50%);
-    top: 64%;
-    right: 25%;
+    top: 50%;
+    right: 35%;
 }
 
 .dowload input {
@@ -147,31 +147,34 @@ main .background1{
 }
 
 .textd2 h1 {
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 .textd2 p {
-    width: 500px;
+    max-width: 500px;
     padding-bottom: 40px;
 }
 
 .galeriaApp {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .galeriaApp img {
-    max-width: 80%;
+    max-width: 200px;
     padding: 10px;
 }
 
 .galeriaApp span h3 {
+    max-width: 200px;
     color: var(--fontCor4);
     padding: 10px 0px;
 }
 
 .galeriaApp span p {
+    max-width: 200px;
     padding-bottom: 20px;
 }
 
